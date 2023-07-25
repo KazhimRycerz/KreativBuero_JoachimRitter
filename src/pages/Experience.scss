@@ -1,0 +1,52 @@
+@import "../App.scss";
+
+.fifth {
+    opacity: 1;
+    animation: paused;
+    z-index: 11;
+}
+#box5ei {  
+  background: rgba(195, 70, 30, 0.1);
+  //box-shadow: 2px 2px 15px;
+  width: 90%;
+  .article_ei {
+    //background-color: rgba(195, 70, 30, 0.1);   
+    h2 {
+      background: linear-gradient(rgba(195, 70, 30, 0.5)50%, rgba(195, 70, 30, 0.0)), linear-gradient(rgba(255, 255, 255, 1.0)50%,rgba(255, 255, 255, 0.1)80%, rgba(255, 255, 255, 0.0)100%);
+      min-height: 70px;
+      margin-bottom: 0px;
+      padding-left: 50px;
+    }
+    #experiences_JR {
+      width: 70%;
+      padding-bottom: 0px;
+      padding-top: 0;
+      padding-left:50px;
+      margin: 0 0 0 0;
+      div {
+        margin-bottom: 20px;
+        h4 {
+          padding: 0 0 0 0;
+          font-weight:bolder;
+          text-align: left;
+          font-size: $normal;
+          margin: 10px 0 0 0;
+          
+        }
+        li {
+          font-size: $normal;
+          background-color: none;
+          width: 100%;
+          list-style-type:disc;
+          list-style-position: outside;
+          //list-style-image: url('../Images/IMG_3559.PNG');
+        }
+
+      }
+    }
+  }
+}
+
+.experience {
+      color:rgb(195, 70, 30);
+}

@@ -1,0 +1,64 @@
+//colors
+$first-color: rgb(240, 255, 255);
+$secondary-color: lemonchiffon;
+$third-color: rgb(180, 200, 230);
+$fourth-color: rgba(221, 155, 55, 0.2);
+$button-color: rgba(170, 170, 170, 0.75);
+$cpdred: rgb(125, 0, 0);
+$cpdblue: rgb(0, 0, 50);
+
+$OuterSpace: rgb(49, 54, 55);
+$OuterSpace30: rgba(49, 54, 55, 0.2);
+$Vanilla: rgb(208, 181, 164);
+$Amulet: rgb(139, 169, 124);
+$Gothic: rgb(120, 139, 160);
+
+//shadows
+$boxshadow: 0.5rem 0.5rem 2rem;
+$btnshadow: 0px 0px 10px 1px $secondary-color inset, -2px -2px 5px 3px grey,  -5px -5px 5px white inset; 
+$rshadow: 3px 3px black, -3px -3px black, 3px -3px black, -3px 3px black;
+
+//backgroundcolours
+$grad: linear-gradient(rgb(173, 173, 213), rgb(228, 150, 150)) fixed;
+
+/* textsizes*/
+$xxxlarge: 3rem;
+$xxlarge: 2.0rem;
+$xlarge: 1.5rem;
+$large: 1.2rem;
+$normal: 1.1rem;
+$small: 0.9rem;
+$xsmall: 0.75rem;
+$xxsmall: 0.5rem;
+/*$medium: 4rem;
+$large: 10rem;
+$huge: 20rem;
+
+$border-radius:*/
+$radiuslarge: 20px;
+$radiussmall:10px;
+$radiusxsmall:5px;
+
+/*Mediasetting*/
+$phone: 675px;
+$tablet: 870px;
+$desktop: 1250px; 
+$widedesktop: 2500px;
+
+
+/* Fonts */
+$primary-font: "FoundSanExpNorm", sans-serif;
+$primary-font-medium: "FoundSanExpMed", sans-serif;
+$primary-font-bold: "FoundSanBd";
+$calli: "VIA-Verlag";
+$guthaben: "FallingSkyOu";
+$headline: "TwoFold";
+
+/* logos */
+$logosize10: 10px;
+$logosize20: 20px;
+  
+  h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+  }

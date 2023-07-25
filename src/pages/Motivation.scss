@@ -1,0 +1,58 @@
+@import "../App.scss";
+
+.second {
+  opacity: 1;
+  animation: paused;
+  z-index: 11;
+}
+#box5mp {
+  background-color: rgba(250, 200, 80, 0.1);
+  //box-shadow: 2px 2px 15px;
+  width: 90%;
+  .article_mp {
+    h2 {
+      background: 
+        linear-gradient(
+          rgba(250, 200, 80, 0.6) 60%,
+          rgba(250, 200, 80, 0)
+        ),
+        linear-gradient(
+          rgba(255, 255, 255, 1) 60%,
+          rgba(255, 255, 255, 0));
+      min-height: 50px;
+      margin-bottom: 0px;
+      padding-left: 50px;
+    }
+    #motivation_JR {
+      width: 70%;
+      p {
+        width: 90%;
+        padding: 10px 50px 10px 50px;
+      }
+      ul {
+        position: relative;
+        //top: -100px;
+        margin: 0;
+        padding-bottom: 0px;
+        padding-left: 70px;
+        background-color: transparent;
+        li {
+          list-style-type: disc;
+          background: none;
+        }
+      }
+      p:last-child {
+        position: relative;
+        top: 20px;
+        padding-bottom: 00px;
+      }
+      div {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+.motivation {
+  color: rgb(250, 200, 80);
+}

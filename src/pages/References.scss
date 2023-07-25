@@ -1,0 +1,117 @@
+@import "../App.scss";
+
+.seventh {
+  opacity: 1;
+  animation: paused;
+  z-index: 11;
+}
+#box5re {
+  background-color: rgba(100, 5, 80, 0.10);
+  //box-shadow: 2px 2px 15px;
+  width: 90%;
+  .article_re {
+    h2 {
+      background: linear-gradient(
+          rgba(100, 5, 80, 0.4) 60%,
+          rgba(100, 5, 80, 0)
+        ),
+        linear-gradient(rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0));
+      min-height: 60px;
+      margin-bottom: 0px;
+      padding-left: 50px;
+    }
+    #references_JR {
+      width: 70%;
+      padding-left: 50px;
+    }
+    h3 {
+      padding-left: 0px;
+      padding-top: 0;
+      margin-bottom: 0;
+      //color: rgb(100, 5, 80);
+    }
+    .apparisal {
+      //background: rgba(195, 70, 30, 0.1);
+      padding-left: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+      /* padding-bottom: 20px;
+      border-bottom: solid 3px; */
+      h4 {
+        margin: 0px 0 0 0;
+        padding: 0px 0px 0px 0px;
+        font-weight: bolder;
+        text-align: left;
+      }
+      q {
+        padding: 0px;
+        margin: 0 20px;
+        width: 80%;
+        font-size: $normal;
+        display: block;
+        text-align: left;
+      }
+      p {
+        font-size: $normal;
+        background-color: transparent;
+        width: 90%;
+      }
+    }
+    .Trenner {
+      display: block;
+      width: 5%;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+.reference {
+  color: rgb(100, 5, 80);
+}
+
+.box7_figures {
+  position: relative;
+  //border-bottom: 1px dotted black;
+}
+
+.box7_figures:before {
+  content: attr(hover-text); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 31% 76%, 20% 100%, 15% 75%, 0% 75%);
+    visibility: hidden;
+    opacity: 0;
+    width: 150px;
+    height: auto;
+    min-height: 100px;
+    background-color: rgba(69, 69, 69);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px;
+    padding: 10px ;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    top: -100%;   
+}
+
+#DCICertificat:before {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 55% 75%, 0% 75%);
+  min-height: 100px;
+  top: -100%;
+  left: -50%
+}
+
+.box7_figures:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#raiseImage {
+position: fixed;
+top: 50px;
+left: center;
+size: 100vw;
+}
