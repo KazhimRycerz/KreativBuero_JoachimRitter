@@ -1,84 +1,51 @@
-import { NavLink } from 'react-router-dom'
+import { Nav } from 'react-router-dom'
 import JoachimRitter from '../components/JoachimRitter.js'
+import Header from '../components/Header/Header.js'
 import './Home.scss'
 
 const Home = () => (
-    <div className="bg">
-      <img className="bgimage" src="../Images/IMG_1839.PNG" alt=""/>
-      <div className="content">
-        <div className="box1"></div>
-        <div className="box2">
-          <h1 >Professional fingerprint</h1>
-          <p id="motto">Living to work - instead of working to live</p>
-        </div>
-        <header className="box3">
-         <JoachimRitter />
-        </header>
-        <div className="box4">
+    <>
+       <Header />
+        <main>
           <div>
-            <img id="basis" src={require('../Images/1200px-Fingerprint_picture.png')} alt="" />
-            <img id="first" src={require('../Images/IMG_3561.PNG')} alt="" />
-            <img id="second" src={require('../Images/IMG_3556.PNG')} alt="" />
-            <img id="third" src={require('../Images/IMG_3557.PNG')} alt="" />
-            <img id="fourth" src={require('../Images/IMG_3558.PNG')} alt="" />
-            <img id="fifth" src={require('../Images/IMG_3559.PNG')} alt="" />
-            <img id="sixth" src={require('../Images/IMG_3560.PNG')} alt="" />
-            <img id="seventh" src={require('../Images/IMG_3554.PNG')} alt="" />
-            <img id="eigth" src={require('../Images/IMG_3679.PNG')} alt="" />
-            <img id="ninth" src={require('../Images/IMG_3680.PNG')} alt="" />
+            <h1 id="headlineHome">KreativBuero : Joachim Ritter   </h1><span id="JRTypewriterkeys">JR</span> 
+            <h2 id="motto">HI40 : 40 years of human intelligence</h2>
+            <p>40 Jahre Erfahrungen in Texte, Konzepte.</p>
           </div>
-        </div>
-        <div className="box5" id="box5home">
-          <nav>
-            <ul id="home_contens">
-                <li><NavLink to ="/PersonalData" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" > <p><ion-icon name="finger-print-outline"></ion-icon></p> personal data</NavLink></li>
-                <li><NavLink to ="/Motivation" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >   <p><ion-icon name="finger-print-outline"></ion-icon></p> professional philosophy and motivation</NavLink></li>
-                <li><NavLink to ="/Career" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >       <p><ion-icon name="finger-print-outline"></ion-icon></p> career - how I met my ...</NavLink></li>
-                <li><NavLink to ="/Experience" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >   <p><ion-icon name="finger-print-outline"></ion-icon></p> experience and professional impact</NavLink></li>
-                <li><NavLink to ="/References" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >   <p><ion-icon name="finger-print-outline"></ion-icon></p> references</NavLink></li>
-                <li><NavLink to ="/MyFuture" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >     <p><ion-icon name="finger-print-outline"></ion-icon></p> where I see my future</NavLink></li>
-                <li><NavLink to ="/Contactandsocialmedia" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" ><p><ion-icon name="finger-print-outline"></ion-icon></p> contact and social media</NavLink></li>
+          <section id="homeTexte1">
+            <h2>Texte und Inhalte</h2>
+            <p>Journalismus, Copywriting, Korrespondenzen, Übersetzungen, Recherchen</p>
+          </section>
+          <section id="homeTexte2">
+            <h2>Graphics</h2>
+            <p>Designkonzepte, Webdesign, Styling</p>
+            <ul>
+              <li>Qanat21</li>
+              <li></li>
             </ul>
-          </nav>
-        </div>
-        <nav className="box6">
-        <ul>
-          <li>home /<br /> fingerprint</li>
-          <li><NavLink to ="/PersonalData" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >personal data</NavLink></li>
-          <li><NavLink to ="/Motivation" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >philosophy / <br />motivation</NavLink></li>
-          <li><NavLink to ="/Career"  onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >carrer / <br />my way...</NavLink></li>
-          <li><NavLink to ="/Experience"  onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >experience and <br />professional <br />impact</NavLink></li>
-          <li><NavLink to ="/References"  onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >references</NavLink></li>
-          <li><NavLink to ="/MyFuture"  onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >my future</NavLink></li>
-          <li><NavLink to ="/ContactAndSocialMedia" onMouseEnter="lightTopicOn()" onMouseLeave="lightTopicOff()" >contact and <br />social media</NavLink></li>
-        </ul>
-      </nav>
-        <div className="box7">
-          <figure id="myOrigin" hover-text="Journalism and light - 25 years of experience" >
-            <img src={require('../Images/buchMitLicht.png')} alt="" />
-          </figure>
-          <figure id="PLDmagazine" hover-text="PLDmagazine - 20 years of publishing the leading literature in architectural lighting design">
-            <img src={require('../Images/PLD_80_Titel_D.jpg')} alt="" />
-          </figure>
-          <figure id="GutLohof" hover-text="Daylight museum Gut Lohhof in Welver">
-            <img id="nn3" src={require('../Images/Lohhof.jpg')} alt="" />
-          </figure>
-          <figure id="PLDWebsite" hover-text="PLD modern webdesign for a trade magazine in architecture">
-            <img src={require('../Images/homepagePLDM.jpg')} alt="" />
-          </figure>
-          <figure id="Qanat21" hover-text="Qanat12: 2nd price of the Guide Innovation Award 2022 - Strategist for overall project" >
-            <img src={require('../Images/Qanat21_Logo_Q.png')} alt="" />
-          </figure>
-          <figure id="LWLGT" hover-text="Lighting design on the occasion of the International Day of the Elimination of Violence against Women 2021">
-            <img src={require('../Images/LWLGT.jpg')} alt="" />
-          </figure>
-        </div>
-        <div className="box8"></div>
-        <div className="box9"></div>
-        <footer className="box10">&copy; Joachim Ritter</footer>
+          </section>
+          <section id="homeTexte3">
+            <h2>Visuals in modernster Form</h2>
+            <p>Fotografie, Bildbearbeitung</p>
+          </section>
+          <section id="homeTexte4">
+            <h2>Realisierung</h2>
+            <p>Webprogrammierung, Druckmanagement, Events</p>
+          </section>
+          <section id="homeTexte5">
+            <h2>Consulting</h2>
+            <p>Projektconsulting, Managementconsulting</p>
+            <ul>
+              <li>A.LI.CE - Alingsas Lighting Center, Alingsas Kommun/SE</li>
+              <li>Alströmer Magasinet - Museumskonzeptionierung, Alingsas/SE</li>
+              <li>Gut Lohhof - Neukonzeptionierung eines privaten Freilichtmuseums, Welver/DE</li>
+              <li>Professional Lighting Designers' Association e.V - Strategie zur Entwicklung eines Berufsbildes</li>
+              <li></li>
+            </ul>
+          </section>
+        </main>
         
-      </div>
-    </div>
+    </>
 )
 
     export default Home

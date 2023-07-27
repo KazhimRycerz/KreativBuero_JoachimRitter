@@ -1,4 +1,4 @@
-import '../App.scss'
+import '../global.scss'
 
 const JoachimRitter =()=>{
    return(
