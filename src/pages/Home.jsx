@@ -1,4 +1,4 @@
-import { Nav } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import JoachimRitter from '../components/JoachimRitter.js'
 import Header from '../components/Header/Header.js'
 import './Home.scss'
@@ -14,7 +14,13 @@ const Home = () => (
           </div>
           <section id="homeTexte1">
             <h2>Texte und Inhalte</h2>
-            <p>Journalismus, Copywriting, Korrespondenzen, Übersetzungen, Recherchen</p>
+            <p>
+              <Link to ="/home">Journalismus, </Link> 
+              <Link to ="/home">Copywriting, </Link>
+              <Link to ="/home">Korrespondenz, </Link>
+              <Link to ="/home">Übersetzungen, </Link>
+              <Link to ="/home">Recherchen </Link>
+            </p>
           </section>
           <section id="homeTexte2">
             <h2>Graphics</h2>

@@ -14,9 +14,6 @@ const Header =()=>{
         setIsOpen(!isOpen);
       };
     
-
-
-
    return(
       <> 
          <header>
