@@ -7,10 +7,10 @@ const Home = () => (
     <>
        <Header />
         <main>
-          <div>
-            <h1 id="headlineHome">KreativBuero : Joachim Ritter   </h1><span id="JRTypewriterkeys">JR</span> 
-            <h2 id="motto">HI40 : 40 years of human intelligence</h2>
-            <p>40 Jahre Erfahrungen in Texte, Konzepte.</p>
+          <div id="introHome">
+            <h1 id="headlineHome">KreativBuero : Joachim Ritter</h1> 
+            <div className ="typewriterkeys" id="JRHome">JR</div>
+            <h2 id="motto">HI : 40 years of human intelligence</h2>
           </div>
           <section id="homeTexte1">
             <h2>Texte und Inhalte</h2>
@@ -30,7 +30,7 @@ const Home = () => (
           </section>
           <section id="homeTexte4">
             <h2>Realisierung</h2>
-            <p>Webprogrammierung, Druckmanagement, Events</p>
+            <p>Webprogrammierung, Druckmanagement, Events, Lichtinstallationen</p>
           </section>
           <section id="homeTexte5">
             <h2>Consulting</h2>
@@ -40,7 +40,6 @@ const Home = () => (
               <li>Alströmer Magasinet - Museumskonzeptionierung, Alingsas/SE</li>
               <li>Gut Lohhof - Neukonzeptionierung eines privaten Freilichtmuseums, Welver/DE</li>
               <li>Professional Lighting Designers' Association e.V - Strategie zur Entwicklung eines Berufsbildes</li>
-              <li></li>
             </ul>
           </section>
         </main>

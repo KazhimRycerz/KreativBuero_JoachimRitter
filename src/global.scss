@@ -1,4 +1,9 @@
 @import "./typo/typo.scss";
 @import "./variables/variables.scss";
 
-
+.typewriterkeys{
+    font-family:typekeys;
+        color: black;
+        //border:solid;
+        vertical-align: middle;
+}
