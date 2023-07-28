@@ -36,13 +36,18 @@ const Header =()=>{
             <div className="bar"></div>
             <div className="bar"></div>
             </div>
-            {isOpen && (
+            {/* {isOpen && (
             <ul className="menu-items">
                <li>Home</li>
                <li>About</li>
                <li>Contact</li>
             </ul>
-            )}
+            )} */}
+            <ul className={`${isOpen ? "menuItemsOpen" : "menuItemsClosed"}`}>
+               <li>Home</li>
+               <li>About</li>
+               <li>Contact</li>
+            </ul>
          </div>
         </header>
       </>
