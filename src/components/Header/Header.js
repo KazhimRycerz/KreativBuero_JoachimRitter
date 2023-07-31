@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import React, { useState } from "react";
 import './Header.scss'
 
@@ -43,13 +43,14 @@ const Header =()=>{
                <li>Contact</li>
             </ul>
             )} */}
+         </div>
+        </header>
             <ul className={`${isOpen ? "menuItemsOpen" : "menuItemsClosed"}`}>
                <li>Home</li>
                <li>About</li>
                <li>Contact</li>
+               <li><Link to ="/References">Texte</Link></li>
             </ul>
-         </div>
-        </header>
       </>
    )
 }

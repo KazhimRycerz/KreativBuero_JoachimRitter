@@ -13,7 +13,7 @@
     //border:solid black;
     width: 100%;
     >*{
-        //border: solid;
+      //border: solid;
     }
     p{
         display: inline;
@@ -99,39 +99,48 @@
   
   .menuItemsOpen {
     list-style: none;
-    position: absolute;
-    top: 30px;
-    right: 20px;
+    position: fixed;
+    top: 50px;
+    right: -30px;
     background-color: white;
     padding: 10px;
     //border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    //border-radius: 5px;
+    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 200px;
     height: 100vh;
-    transition: 1s ease-in;
+    transition:  .3s ease-in;
+    
   }
 
   .menuItemsClosed {
     list-style: none;
-    position: absolute;
-    top: 30px;
-    right: -150px;
+    position: fixed;
+    top: 50px;
+    right: -300px;
     background-color: white;
-    transition: 1s ease-in;
+    padding: 10px;
+    //border: 1px solid #ddd;
+    //border-radius: 5px;
+    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    transition:  .5s ease-in;  
     
   }
   
-  .menuItemsOpen li {
+  .menuItemsOpen li, .menuItemsClosed li {
     margin: 5px 0;
     cursor: pointer;
     color: black;
     border-bottom: solid grey
+      {
+      color: black;
+    }
   }
   
-  #hamburgerHeader {
-
-  }
     
