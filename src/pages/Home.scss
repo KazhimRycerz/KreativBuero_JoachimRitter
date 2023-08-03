@@ -4,42 +4,41 @@
     color: white;
 }
 
-#headerOnHome {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
 
 main {
-    background-color:cadetblue;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    position:relative;
+    top: 135px;
+    z-index: 10;
     
-    #introHome{
+
+    #introHome, #infoHome{
+        background-color:rgba(95, 158, 160, 0.85);
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        
+        align-items: center;
         width: 100%;
-        //background-color: blue;
-        padding: 20px 0 20px 100px; 
-        margin: 50px auto;
-        //border: solid 3px white;
+        padding: 0px 0px ; 
+        margin: 0 auto 50px;
+        border: solid 3px white;
+        height: 300px;
         >*{
             //border: solid;
             width: 30%;
             height: auto;
 
         }
-        #headlineHome{
+        h1{
             font-family: $primary-font-medium;
-            font-size: 3vw;
+            font-size: 3rem;
             color: white;
             //background-color: white;
             height: fit-content;
             text-align: start;
-            margin: 0;
+            margin-left: 20px;
         }
         #motto {
             display: inline-block;
@@ -48,7 +47,7 @@ main {
             background-color: none;
             //clip-path: polygon(2% 0, 100% 6%, 99% 97%, 0% 100%);
             //padding: 50px;
-            margin-right: 100px;
+            margin-right: 20px;
             width: fit-content;
             height:fit-content;
             color: white;
@@ -59,9 +58,10 @@ main {
             font-family:typekeys;
             color: black;
             //border:solid;
-            vertical-align: middle;
-            line-height: 10rem;
+            vertical-align:baseline;
+            line-height: 300px;
             text-align: center;
+            padding-top: 50px;
         }
     }
 }
@@ -110,12 +110,11 @@ section{
         height: 100%;
         padding: 15px;
         line-height: 2rem;
-        opacity: .5;
-        //transform: rotate(10deg);
+        opacity: 0.5;
         transition: 1s ease-in;
         overflow: hidden;
     }
-    :hover {
+    p:hover {
         position: relative;
         right: -47%;
         top: -170px;
@@ -208,4 +207,32 @@ section{
     ul{
         width: 50%;
     }
+}
+
+#homeTexte6{
+    display: block;
+    width: 100%;
+    background-image: none;
+    /* background-image: url(../Images/KAimMohnspark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    #imageSlider{
+        position: relative;
+        width: 100%;
+        //display: none;
+    }
+    h2 {
+        position: relative;
+        top: -500px;
+    }
+    ul{
+        position: relative;
+        top: -500px;
+    }
+}
+
+#infoHome {
+    margin-top: 130px;
+    background-image: none;
 }

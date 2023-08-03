@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SliderHome.scss";
-import KA_bearbeitet from '../../Images/KAimMohnspark_bearbeitet.jpg';
-import KA_unbearbeitet from '../../Images/KAimMohnspark.jpg';
+/* import KA_bearbeitet from '../../Images/KAimMohnspark_bearbeitet.jpg';
+import KA_unbearbeitet from '../../Images/KAimMohnspark.jpg'; */
 
 
 const ImageSlider = (/* { images, intervalTime } */props) => {
@@ -34,8 +34,8 @@ const ImageSlider = (/* { images, intervalTime } */props) => {
       <div className="auto-image-slider">
         <img { ...props.images[currentIndex] } alt={`Slide ${currentIndex + 1}`} />
         <div>
-            <button onClick={handlePrevClick}>&lt;&lt;</button>
-            <button onClick={handleNextClick}>&gt;&gt;</button>
+            <button onClick={handlePrevClick}>&lt;</button>
+            <button onClick={handleNextClick}>&gt;</button>
         </div>
       </div>
     );

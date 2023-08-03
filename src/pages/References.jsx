@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import JoachimRitter from "../components/JoachimRitter.js";
 import "./References.scss";
 import BuchmitLicht from "../Images/buchMitLicht.png";
@@ -8,11 +8,11 @@ import DCIZertifikatOK from "../Images/Zertifikat_DCI_Joachim Ritter.jpg";
 import GuideAwardCertificate from "../Images/GuideAwardCertificate.jpg";
 import LingodaCertificat from "../Images/LingodaCertificat.jpg";
 import DCI_certificate_webdeveloper_en from "../Images/DCI_certificate_webdeveloper_en.jpg";
-import { useState } from "react";
+
 
 const References = () => {
   
-  const [raiseImage, setRaiseImage] = useState("");
+  
 
   return(
     <div className="bg">
@@ -38,7 +38,7 @@ const References = () => {
               <h3>My personality test</h3>
               <div className="apparisal">
                 <h4>Classified as "Commander", certified by 16Personalities</h4>
-                <a href="https://www.16personalities.com/profiles/ffa70d7bacbb3" target="_blank" >Last made on 13. October 2022</a>
+                <a href="https://www.16personalities.com/profiles/ffa70d7bacbb3" target="_blank" rel="noreferrer" >Last made on 13. October 2022</a>
                 <p>
                   Insights about commanders.
                   <li>

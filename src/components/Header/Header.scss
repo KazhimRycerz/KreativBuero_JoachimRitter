@@ -1,19 +1,28 @@
 @import "../../global.scss";
 
- header{
+header{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  top: 0px;
+  z-index: 100;
+
+  #headerBox{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    //gap: 5%;
-    position:sticky;
+    position:relative;
     top: 0px;
     background-color: white;
     min-height: 75px;
-    //border:solid black;
     width: 100%;
+    max-width: 1279px;
+    margin: 0 auto;
+    //border:solid;
     z-index: 100;
-    >*{
+    *{
       //border: solid;
     }
     p{
@@ -26,10 +35,11 @@
     #JRHeader {
         font-size: 3rem;
         display: inline;
-        margin-left: 100px;
+        margin-left: 00px;
         line-height: 75px;
+        //border: solid;
     }
- 
+
     nav {
         display: inline-block;
         width: fit-content;
@@ -58,6 +68,16 @@
             }
         }
     }
+}
+}
+#headerHide{
+  //display: none;
+  top:-80px;
+  transition: top 500ms ease-in;
+}
+#headerShow{
+  top:0px;
+  transition: top 500ms ease-in;
 }
 
 /* HamburgerMenu.css */
@@ -110,9 +130,10 @@
     //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     height: 100vh;
     transition:  .3s ease-in;
+    //z-index: 100;
     
   }
 
@@ -143,5 +164,10 @@
       color: black;
     }
   }
-  
-    
+
+
+/* @media (min-width: 1279px){
+    header {
+      margin-left: calc((100% - 1280px)/2)
+    }
+  } */

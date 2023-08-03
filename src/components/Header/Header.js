@@ -1,34 +1,39 @@
 import { NavLink, Link } from 'react-router-dom'
-import React, { useState } from "react";
+import React, { useContext} from "react";
+import { SectionsContext } from "../../context/SectionsContext.js";
 import './Header.scss'
 
-
-
-
-
 const Header =()=>{
+   //const { scrollPosition } = useContext(SectionsContext);
+   const { headerPosition } = useContext(SectionsContext);
+   const { isOpen, setIsOpen } = useContext(SectionsContext);
+   //const [isOpen, setIsOpen] = useState(false);
    
-      const [isOpen, setIsOpen] = useState(false);
-    
-      const toggleMenu = () => {
-        setIsOpen(!isOpen);
-      };
+   const toggleMenu = () => {
+      setIsOpen(!isOpen);
+   };
     
    return(
-      <> 
-         <header>
+      <header id={ headerPosition } >
+         <div id="headerBox">
           <nav>
             <ul>
                 <li><NavLink to ="/texte">Texte</NavLink></li>
                 <li><NavLink to ="/graphics"> Graphics</NavLink></li>
                 <li><NavLink to ="/visuals"> Visuals</NavLink></li>
-                <li><NavLink to ="/konzepte"> Konzepte</NavLink></li>
+                {/* <li><NavLink to ="/konzepte"> Konzepte</NavLink></li> */}
                 <li><NavLink to ="/realisierung"> Realisierung</NavLink></li>
                 <li><NavLink to ="/consulting"> Consulting</NavLink></li>
                 
             </ul>
           </nav>
-         <p>KreativBuero : Joachim Ritter</p>
+         <div>
+            <p>KreativBuero : Joachim Ritter</p>
+            <div>
+               {/* <p>Aktuelle Scroll-Position: {scrollPosition}</p>
+               <span style={{ height: '2000px' }}></span> */}
+            </div>
+         </div>
          <div className ="typewriterkeys" id="JRHeader">JR</div>
          <div className="hamburger-menu">
             <div className={`menu-icon ${isOpen ? "open" : ""}`} id="hamburgerHeader" onClick={toggleMenu}>
@@ -44,14 +49,14 @@ const Header =()=>{
             </ul>
             )} */}
          </div>
-        </header>
+        </div>
             <ul className={`${isOpen ? "menuItemsOpen" : "menuItemsClosed"}`}>
                <li>Home</li>
                <li>About</li>
                <li>Contact</li>
                <li><Link to ="/References">Texte</Link></li>
             </ul>
-      </>
+      </header>
    )
 }
 export default Header

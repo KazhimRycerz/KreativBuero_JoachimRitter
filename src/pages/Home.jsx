@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-//import React, { useState, useEffect } from "react";
+import React from "react";
 //import JoachimRitter from '../components/JoachimRitter.js'
 import Header from '../components/Header/Header.js'
 import './Home.scss'
 import ImageSlider from '../components/SliderHome/SliderHome.js'
-import KA_bearbeitet from'../Images/KAimMohnspark_bearbeitet.jpg'
-import KA_unbearbeitet from'../Images/KAimMohnspark.jpg'
+//import { SectionsContext } from "../context/SectionsContext.js";
+/* import KA_bearbeitet from'../Images/KAimMohnspark_bearbeitet.jpg'
+import KA_unbearbeitet from'../Images/KAimMohnspark.jpg' */
 
 
 const Home = () => {
@@ -15,19 +16,22 @@ const Home = () => {
     {src: require('../Images/KAimMohnspark_bearbeitet.jpg'), alt:'image2'},
     {src: require('../Images/KA_Mohnspark_2_0.jpg'), alt:'image3'},
     {src: require('../Images/KA_Mohnspark_2_2.jpg'), alt:'image4'},
-    {src: require('../Images/KA_Mohnspark_2_1.jpg'), alt:'image5'},
+    {src: require('../Images/KA_Mohnspark_2_3.jpg'), alt:'image5'},
+    {src: require('../Images/KA_Mohnspark_2_0.jpg'), alt:'image3'},
+    //{src: require('../Images/KA_Mohnspark_2_1.jpg'), alt:'image5'},
     //{src: KA_bearbeitet , alt:'image3'}
   ];
-
+    
   return (
     <>
        <Header />
         <main>
           <div id="introHome">
             <h1 id="headlineHome">KreativBuero : Joachim Ritter</h1> 
-            <div className ="typewriterkeys" id="JRHome">JR</div>
+            <p className ="typewriterkeys" id="JRHome">JR</p>
             <h2 id="motto">HI : 40 years of human intelligence</h2>
           </div>
+          
           <section id="homeTexte1">
             <h2>Texte und Inhalte</h2>
             <ul>
@@ -58,15 +62,16 @@ const Home = () => {
           {/* <section className="info">
             <div className ="typewriterkeys" id="JRHome">JR</div>
           </section> */}
+
           <section id="homeTexte3">
             <div id="imageSlider">< ImageSlider  images={ images } intervalTime={4000}  /></div>
-            <h2>Visuals in modernster Form</h2>
+            <h2>Visuals</h2>
             <ul>
             <Link to ="/home">Fotografie, </Link>
             <Link to ="/home">Bildbearbeitung</Link>
             </ul>
-      
           </section>
+
           <section id="homeTexte4">
             <h2>Realisierung</h2>
             <ul>
@@ -89,6 +94,19 @@ const Home = () => {
               <li>Gut Lohhof - Neukonzeptionierung eines privaten Freilichtmuseums, Welver/DE</li>
               <li>Professional Lighting Designers' Association e.V - Strategie zur Entwicklung eines Berufsbildes</li>
             </ul> */}
+          </section>
+          {/* <section id="homeTexte6">
+            <div id="imageSlider">< ImageSlider  images={ images } intervalTime={4000}  /></div>
+            <h2>Visuals</h2>
+            <ul>
+            <Link to ="/home">Fotografie, </Link>
+            <Link to ="/home">Bildbearbeitung</Link>
+            </ul>
+          </section> */}
+          <section id="infoHome">
+            <h1 id="headlineInfoome">KreativBuero : Joachim Ritter</h1> 
+            <p className ="typewriterkeys" id="JRHome">JR</p>
+            <h2>HI : 40 years of human intelligence</h2>
           </section>
         </main>  
     </>
