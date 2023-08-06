@@ -15,7 +15,7 @@ header{
     align-items: center;
     position:relative;
     top: 0px;
-    background-color: white;
+    background-color: none;
     min-height: 75px;
     width: 100%;
     max-width: 1279px;
@@ -26,11 +26,11 @@ header{
       //border: solid;
     }
     p{
-        display: inline;
-        font-size: 20px;
-        font-family: $primary-font-bold;
-        //border: solid;
-        color: black;
+      display: inline;
+      font-size: 20px;
+      font-family: $primary-font-bold;
+      //border: solid;
+      color: black;
     }
     #JRHeader {
         font-size: 3rem;

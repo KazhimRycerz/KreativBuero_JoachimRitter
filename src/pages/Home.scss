@@ -16,6 +16,7 @@ main {
 
     #introHome, #infoHome{
         background-color:rgba(95, 158, 160, 0.85);
+        background-color:rgba(255, 255, 255, 0.8);
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -34,34 +35,33 @@ main {
         h1{
             font-family: $primary-font-medium;
             font-size: 3rem;
-            color: white;
-            //background-color: white;
+            color: black;
             height: fit-content;
             text-align: start;
             margin-left: 20px;
         }
-        #motto {
+        .motto {
             display: inline-block;
             font-family: $primary-font-medium;
-            font-size: 1.5vw;
+            font-size: 2vw;
             background-color: none;
             //clip-path: polygon(2% 0, 100% 6%, 99% 97%, 0% 100%);
             //padding: 50px;
             margin-right: 20px;
-            width: fit-content;
+            width: 30%;
             height:fit-content;
-            color: white;
+            color: black;
             //border: groove white 10px;
         }
-        #JRHome {
+        #JRHome, #JRInfoHome {
             font-size: 10vw;
             font-family:typekeys;
             color: black;
-            //border:solid;
             vertical-align:baseline;
             line-height: 300px;
             text-align: center;
             padding-top: 50px;
+            //border:solid;
         }
     }
 }
@@ -98,7 +98,7 @@ section{
 }
 
 #homeTexte1{
-    overflow:hidden;
+    overflow: hidden;
     ul{
         width: 50%;
     }
@@ -113,19 +113,24 @@ section{
         opacity: 0.5;
         transition: 1s ease-in;
         overflow: hidden;
+        margin-bottom: 10px;
     }
     p:hover {
         position: relative;
         right: -47%;
         top: -170px;
         //width: 50%;
-        padding: 15px;
-        padding-bottom: 130px;
+        //height: calc(fit-content + 10%);
+        //padding: 15px;
+        //padding-bottom: 130px;
         line-height: 2rem;
         opacity: 1;
-        background: grey;
+        //background: rgba(95, 158, 160);
+        background: white;
+        color: black;
         overflow-y: scroll;
         transition:  1s ease-in;
+        margin-bottom: 10px;
     }
 
 }
@@ -235,4 +240,7 @@ section{
 #infoHome {
     margin-top: 130px;
     background-image: none;
+    h2{
+        color: black;
+    }
 }

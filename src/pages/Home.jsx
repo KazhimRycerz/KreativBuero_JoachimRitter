@@ -29,7 +29,7 @@ const Home = () => {
           <div id="introHome">
             <h1 id="headlineHome">KreativBuero : Joachim Ritter</h1> 
             <p className ="typewriterkeys" id="JRHome">JR</p>
-            <h2 id="motto">HI : 40 years of human intelligence</h2>
+            <h2 className="motto">HI : 40 years of <br />Human Intelligence</h2>
           </div>
           
           <section id="homeTexte1">
@@ -42,8 +42,7 @@ const Home = () => {
               <Link to ="/home">Recherchen </Link>
             </ul>
             <p id="textHintergrund">
-              Das Projekt nimmt sich der hochaktuellen Problematik des Süßwassermanagements an, welche in Folge des Klimawandels und dem Verlust von Sickerflächen bzw. zunehmende versiegelte Flächen aktuell wie auch in absehbarer Zeit an Bedeutung gewinnt. Der Lösungsansatz behandelt ein grundlegendes Management von Süßwasser unter Berücksichtigung von Regenfällen einerseits und Dürreperioden andererseits und damit primär von Extremwetterereignissen, wie sie aktuell und in absehbarer Zukunft mehr und mehr erwartet werden. Inhaltlich bedeutend sind der Lösungsansatz und die Überlegungen insbesondere für die am 14. März 2023 vom Bundesministerium veröffentlichte „Nationale Wasserstrategie“, die zwar Ziele definiert, aber es an konkreten umsetzbaren Lösungen mangeln lässt. Zu gleichen Überlegungen und daraus resultierenden Absichten kommt die UNO-Wasserkonferenz, die vom 22. – 24. März 2023 in New York stattfand. Weitere internationale Konferenzen finden in naher Zukunft statt, World Water Week, Stockholm/SE, 20. – 24. August 2023. Die Geschäftsidee bietet Konzepte für aktuelle Problemstellungen im Städtebau, in der Landwirtschaft und für Industrieprojekte, wie auch für die Hochwasserproblematik und stark schwankende Pegelstände in Flussläufen und Grundwasserstrukturen. Auch werden als Nebeneffekt die Möglichkeit der Gewinnung alternativer Grüner Energie innerhalb des Systems eingebunden. Diese Möglichkeit ergibt sich in der Konsequenz aus der grundlegenden Konzeption der Wasserführung. Ein weiteres Element ist die Möglichkeit, Klimatisierungseffekte im städtischen Raum durch unterirdische Wasserführung zu erzielen. Ob Thermoenergie / Kühlung in das System integriert werden kann, ist Gegenstand darüber hinaus gehender Untersuchungen. Die Idee basiert auf Erfahrungen und Lösungen antiker Kulturen, wie dem Iran bereits vor mehr als 3000 Jahren, wie auch im späteren Italien, Spanien, China und Marokko. Diese Systeme haben heute noch Gültigkeit und sind aktiv im Betrieb. Aktuell nutzen Städte wie London oder Tokio den Grundgedanken dieses Systems des Wassermanagements. Unterirdisch werden Wasserflüsse definiert und teilweise in ebenso unterirdischen Rückhaltebecken gesammelt.
-              
+              Das Projekt nimmt sich der hochaktuellen Problematik des Süßwassermanagements an, welche in Folge des Klimawandels und dem Verlust von Sickerflächen bzw. zunehmende versiegelte Flächen aktuell wie auch in absehbarer Zeit an Bedeutung gewinnt. Der Lösungsansatz behandelt ein grundlegendes Management von Süßwasser unter Berücksichtigung von Regenfällen einerseits und Dürreperioden andererseits und damit primär von Extremwetterereignissen, wie sie aktuell und in absehbarer Zukunft mehr und mehr erwartet werden. Inhaltlich bedeutend sind der Lösungsansatz und die Überlegungen insbesondere für die am 14. März 2023 vom Bundesministerium veröffentlichte „Nationale Wasserstrategie“, die zwar Ziele definiert, aber es an konkreten umsetzbaren Lösungen mangeln lässt. Zu gleichen Überlegungen und daraus resultierenden Absichten kommt die UNO-Wasserkonferenz, die vom 22. – 24. März 2023 in New York stattfand. Weitere internationale Konferenzen finden in naher Zukunft statt, World Water Week, Stockholm/SE, 20. – 24. August 2023. Die Geschäftsidee bietet Konzepte für aktuelle Problemstellungen im Städtebau, in der Landwirtschaft und für Industrieprojekte, wie auch für die Hochwasserproblematik und stark schwankende Pegelstände in Flussläufen und Grundwasserstrukturen. Auch werden als Nebeneffekt die Möglichkeit der Gewinnung alternativer Grüner Energie innerhalb des Systems eingebunden. Diese Möglichkeit ergibt sich in der Konsequenz aus der grundlegenden Konzeption der Wasserführung. Ein weiteres Element ist die Möglichkeit, Klimatisierungseffekte im städtischen Raum durch unterirdische Wasserführung zu erzielen. Ob Thermoenergie / Kühlung in das System integriert werden kann, ist Gegenstand darüber hinaus gehender Untersuchungen. Die Idee basiert auf Erfahrungen und Lösungen antiker Kulturen, wie dem Iran bereits vor mehr als 3000 Jahren, wie auch im späteren Italien, Spanien, China und Marokko. Diese Systeme haben heute noch Gültigkeit und sind aktiv im Betrieb. Aktuell nutzen Städte wie London oder Tokio den Grundgedanken dieses Systems des Wassermanagements. Unterirdisch werden Wasserflüsse definiert und teilweise in ebenso unterirdischen Rückhaltebecken gesammelt. <div>a</div>
             </p>
           </section>
           <section id="homeTexte2">
@@ -103,11 +102,11 @@ const Home = () => {
             <Link to ="/home">Bildbearbeitung</Link>
             </ul>
           </section> */}
-          <section id="infoHome">
-            <h1 id="headlineInfoome">KreativBuero : Joachim Ritter</h1> 
-            <p className ="typewriterkeys" id="JRHome">JR</p>
-            <h2>HI : 40 years of human intelligence</h2>
-          </section>
+          <div id="infoHome">
+            <h1 id="headlineInfome">KreativBuero : Joachim Ritter</h1> 
+            <p className ="typewriterkeys" id="JRInfoHome">JR</p>
+            <h2 className="motto">HI : 40 years of <br />human intelligence</h2>
+          </div>
         </main>  
     </>
     );
