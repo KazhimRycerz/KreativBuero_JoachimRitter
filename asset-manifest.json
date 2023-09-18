@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KreativBuero_JoachimRitter/static/css/main.9a427ed3.css",
-    "main.js": "/KreativBuero_JoachimRitter/static/js/main.425620cc.js",
+    "main.js": "/KreativBuero_JoachimRitter/static/js/main.69751ba7.js",
     "static/media/Lohhof.jpg": "/KreativBuero_JoachimRitter/static/media/Lohhof.e8e288019d65766c2fc7.jpg",
     "static/media/background_KBJR.jpg": "/KreativBuero_JoachimRitter/static/media/background_KBJR.77b5304ba566cf668302.jpg",
     "static/media/FrederickatheGreat-Regular.otf": "/KreativBuero_JoachimRitter/static/media/FrederickatheGreat-Regular.71d00f9bfe711bfefaa4.otf",
@@ -48,10 +48,10 @@
     "static/media/VIA-Verlag.woff2": "/KreativBuero_JoachimRitter/static/media/VIA-Verlag.ca1bde523566b12176ee.woff2",
     "index.html": "/KreativBuero_JoachimRitter/index.html",
     "main.9a427ed3.css.map": "/KreativBuero_JoachimRitter/static/css/main.9a427ed3.css.map",
-    "main.425620cc.js.map": "/KreativBuero_JoachimRitter/static/js/main.425620cc.js.map"
+    "main.69751ba7.js.map": "/KreativBuero_JoachimRitter/static/js/main.69751ba7.js.map"
   },
   "entrypoints": [
     "static/css/main.9a427ed3.css",
-    "static/js/main.425620cc.js"
+    "static/js/main.69751ba7.js"
   ]
 }
