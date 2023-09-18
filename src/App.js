@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/texteundinhalte" element={<TexteUndInhalte />} />
-          <Route path="/doppelpass" element={<Doppelpass />} />
+          <Route path="/texteundinhalte/doppelpass" element={<Doppelpass />} />
           <Route path="/references" element={<References />} />
           <Route path="/KreativBuero_JoachimRitter" element={<Home />} />
           <Route path="*" element={<Page404 />} />
