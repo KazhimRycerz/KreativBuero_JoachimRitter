@@ -19,10 +19,10 @@ const SectionsProvider = ({ children }) => {
     }, [scrollPosition, oldPosition]);
     
     useEffect(() => {
-      // Füge den Scroll-Event-Listener hinzu, wenn die Komponente montiert wird.
+      // Fügt den Scroll-Event-Listener hinzu, wenn die Komponente montiert wird.
       window.addEventListener('scroll', handleScroll);
   
-      // Entferne den Scroll-Event-Listener, wenn die Komponente unmontiert wird.
+      // Entfernt den Scroll-Event-Listener, wenn die Komponente unmontiert wird.
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };

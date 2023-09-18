@@ -1,0 +1,93 @@
+@import "../global.scss";
+
+*{
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position:relative;
+    top: 135px;
+    z-index: 10;
+
+    #introTexteUndInhalte{
+        background-color:rgba(95, 158, 160, 0.85);
+        background-color:rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px 0px ; 
+        margin: 0 auto 50px;
+        border: solid 3px white;
+        height: 300px;
+        >*{
+            //border: solid;
+            width: 30%;
+            height: auto;
+        }
+        h1{
+            font-family: $primary-font-medium;
+            font-size: 3rem;
+            color: black;
+            height: fit-content;
+            text-align: start;
+            margin-left: 20px;
+        }
+        p, ul a{
+            color: black;
+            font-size: 2rem;
+        }
+        ul {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+    }
+        
+    #texteundinhalte1{
+        background-color: white;
+        padding: 0px;
+        border: solid 3px white;
+        width: 100%;
+        height: 500px;
+        display: inline-block;
+        border-color: solid 2px white;
+        /* background-image: url(../Images/buchMitLicht.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        overflow: auto;
+        h2 {
+            margin: 0;
+            position: sticky;
+            top: 0px;
+            display: block;
+            width: auto;
+            height: 60px;
+            line-height: 60px;
+            padding: 25px 20%;
+            background-color: black ;
+        }
+        p {
+            padding: 20px;
+            border: solid 1px white;
+            margin: 10px auto;
+            width: 60%;
+            font-size: 1.5rem;
+            color:black;
+            background-color: white;
+            list-style: none;
+            line-height: 30px;
+            //border: solid black 2px;
+            
+        }
+        
+    }
+    
+}
+
+
+

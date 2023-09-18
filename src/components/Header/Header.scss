@@ -25,12 +25,13 @@ header{
     *{
       //border: solid;
     }
-    p{
+    p a{
       display: inline;
       font-size: 20px;
       font-family: $primary-font-bold;
       //border: solid;
       color: black;
+      text-decoration: none;
     }
     #JRHeader {
         font-size: 3rem;

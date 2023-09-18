@@ -7,28 +7,27 @@ const Header =()=>{
    //const { scrollPosition } = useContext(SectionsContext);
    const { headerPosition } = useContext(SectionsContext);
    const { isOpen, setIsOpen } = useContext(SectionsContext);
-   //const [isOpen, setIsOpen] = useState(false);
    
-   const toggleMenu = () => {
+   /* const toggleMenu = () => {
       setIsOpen(!isOpen);
-   };
+   }; */
     
    return(
       <header id={ headerPosition } >
          <div id="headerBox">
           <nav>
             <ul>
-                <li><NavLink to ="/texte">Texte</NavLink></li>
+                <li><NavLink to ="/texteundinhalte">Texte</NavLink></li>
                 <li><NavLink to ="/graphics"> Graphics</NavLink></li>
                 <li><NavLink to ="/visuals"> Visuals</NavLink></li>
                 {/* <li><NavLink to ="/konzepte"> Konzepte</NavLink></li> */}
                 <li><NavLink to ="/realisierung"> Realisierung</NavLink></li>
                 <li><NavLink to ="/consulting"> Consulting</NavLink></li>
-                
+                <li><NavLink to ="/home"> home</NavLink></li>
             </ul>
           </nav>
          <div>
-            <p>KreativBuero : Joachim Ritter</p>
+            <p><NavLink to ="/home">KreativBuero : Joachim Ritter</NavLink></p>
             <div>
                {/* <p>Aktuelle Scroll-Position: {scrollPosition}</p>
                <span style={{ height: '2000px' }}></span> */}
@@ -36,7 +35,9 @@ const Header =()=>{
          </div>
          <div className ="typewriterkeys" id="JRHeader">JR</div>
          <div className="hamburger-menu">
-            <div className={`menu-icon ${isOpen ? "open" : ""}`} id="hamburgerHeader" onClick={toggleMenu}>
+            <div className={`menu-icon ${isOpen ? "open" : ""}`} id="hamburgerHeader" 
+            //onClick={toggleMenu} 
+            onClick={() => setIsOpen(!isOpen)}>
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
